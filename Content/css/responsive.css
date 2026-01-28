@@ -1,0 +1,552 @@
+  
+
+/* ********************************************************************************************
+    Design for a width of 768px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 768px) {
+
+    /* SM - Floating
+    ======================================================================================= */
+    .pull-sm-left{
+        float: left !important;
+    }
+    .pull-sm-right{
+        float: right !important;
+    }
+    
+    .text-sm-right{
+        text-align: right;
+    }
+
+    /* Navbar
+    ======================================================================================= */
+    .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 992px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 992px) {
+    
+    /* MD - Floating
+    ======================================================================================= */
+    .pull-md-left{
+        float: left !important;
+    }
+    .pull-md-right{
+        float: right !important;
+    }
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 1024px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 1024px) {
+    
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 1200px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 1200px) {
+
+
+    /* Navbar
+    ======================================================================================= */
+    .navbar{
+        
+    }
+    .navbar-right{
+        margin-right: -25px;
+    }
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    .navbar-nav > li > a{
+        padding-left: 25px;
+        padding-right: 25px;
+    }    
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 1367px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 1400px) {
+    
+    /* Container
+    ======================================================================================= */
+    .container{
+        width: 1360px;
+    }
+    
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 1366px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 1366px) {
+    
+    /* Banner Slider
+    ======================================================================================= */
+    .banner-caption .banner-logo{
+        margin-bottom: 30px;
+    }
+    .banner-caption .heading{
+        font-size: 40px;
+    }
+    .banner-caption .action{
+        margin-top: 30px;
+    }
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 992px and below
+*********************************************************************************************** */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)  {
+     
+    /* Navbar
+    ======================================================================================= */
+    .navbar-brand > img{
+        max-width: 250px;
+    }
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    .navbar-nav > li > a{
+        font-size: 14px;
+    }
+
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 1024px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 1199px) {
+       
+    /* Banner Slider
+    ======================================================================================= */
+    .banner-caption{
+        padding-top: 78px;
+    }
+    .banner-caption .banner-logo{
+        margin-bottom: 20px;
+    }
+    .banner-caption .banner-logo img{
+        max-width: 400px;
+    }
+    .banner-caption .heading{
+        font-size: 35px;
+    }
+    .banner-caption p{
+        font-size: 14px;
+    }
+    .banner-caption .action{
+        margin-top: 20px;
+    }       
+  
+}
+
+/* ********************************************************************************************
+    Design for a width of 992px and below
+*********************************************************************************************** */
+
+@media only screen and (min-width: 768px) and (max-width: 991px)  {
+       
+    /* Navbar
+    ======================================================================================= */
+    .navbar-brand > img{
+        max-width: 200px;
+    }
+    .navbar-nav{
+        margin-top: 15px;
+    }
+    .navbar-right{
+        margin-right: -10px;
+    }
+    .navbar-nav > li > a{
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Banner Slider
+    ===========================================================================*/
+    .banner-caption{
+        padding-top: 68px;
+    }
+    .banner-caption .heading{
+        font-size: 25px;
+    }
+    .banner-caption .btn-block-group > .btn{
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+    
+    .list-numbers-large > li .list-content{
+        font-size: 30px;
+    }
+    
+    .video .video-content{
+        /*width: -187px;*/
+        /*height: -74px;*/
+        max-width: 555px;
+        max-height: 358px;
+        top: 32px;
+        left: 91px;
+    }
+    
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 991px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 991px) {
+
+    /* footer
+    ======================================================================================= */
+    .footer-top-container{
+        padding: 80px 0px;
+    }
+    .footer-top-container .v-grid-container,
+    .footer-top-container .v-grid-container .v-grid{
+        display: block;
+    }
+    .footer-top-container .section-title{
+        margin-bottom: 30px;
+    }
+    .footer-top-container .section-title,
+    .footer-top-container .btn-block-group{
+        text-align: center;
+    }
+    
+    .box-large-center .icon {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        font-size:40px;
+    }
+    
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 767px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 767px) {  
+    
+    /* Navbar
+    ======================================================================================= */
+    .navbar-fixed-top{
+        position: relative;
+    }
+    .navbar-brand > img{
+        max-width: 300px;
+        max-height: none;
+    }    
+    
+    /* Banner Slider
+    ===========================================================================*/
+    .banner-caption .heading{
+        font-size: 25px;
+    }
+    .banner-caption{
+        padding-top: 0px;
+    }
+    .banner-caption .btn-block-group > .btn{
+        padding: 8px 18px;
+        font-size: 14px;
+    }    
+    .banner-caption .action{
+        margin-top: 15px;
+    }
+    .v-grid-container{
+        display: block;
+    }
+    .v-grid{
+        display: block;
+    }
+    
+    /* Video
+    ===========================================================================*/
+    .section4 {
+        background-size: 100% 50%;
+    }
+  
+    .video .video-content{
+      left: 12.5%;
+      top: 7%;
+      max-width: 77%;
+      max-height: 84%;
+    }
+    
+    /* Contact Us
+    ===========================================================================*/
+    
+    .flex-div,
+    .flex{
+        display: block;
+        max-width: 100%;
+    }
+    .bg-banner{
+        height: 300px;;
+    }
+    
+    .about-list.list-numbers-large{
+        max-width: none;
+        padding-right: 0%;
+    }
+        
+}
+
+/* ********************************************************************************************
+    Design for a width of 639px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 639px) {
+
+    /* Banner
+    ======================================================================================= */
+    .banner-caption p{
+        display: none;
+    }
+    .banner-caption .heading{
+        font-size: 35px;
+    }
+    
+    .footer-top-container .btn-block-group{
+        margin-left: -1%;
+        margin-right: -1%;
+    }
+    .footer-top-container .btn-block-group > .btn{
+        float: left;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+        max-width: none;
+    }
+     
+
+}
+
+/* ********************************************************************************************
+    Design for a width of 639px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 550px) {
+
+    .video .icons-content{
+        margin-top: -54px;
+    }
+    .video .icons-content .fa{
+        width:60px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 54px;
+    }
+    .video .icons-content p{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    /* Footer
+    ======================================================================================= */    
+    .footer-top-container .btn-block-group,
+    .footer-top-container .btn-block-group > .btn{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .footer-top-container .btn-block-group > .btn{
+        width: 100%;
+    }
+}
+
+
+/* ********************************************************************************************
+    Design for a width of 520px and below
+*********************************************************************************************** */
+
+@media only screen and (min-width: 480px) and (max-width: 520px)  {
+    
+}
+
+/* ********************************************************************************************
+    Design for a width of 479px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 479px) {
+
+    /* Navbar
+    ======================================================================================= */
+    .navbar-toggle{
+        margin-top: 22px;
+    }
+    .navbar-brand > img{
+        max-width: 230px;
+    }    
+
+    /* Sectiom Title
+    ===========================================================================*/    
+    .section-title{
+        margin-bottom: 30px;
+    }
+    .section-title .heading{
+        font-size: 30px;
+    }
+    .list-numbers-large > li .list-content{
+        font-size: 30px;
+    }
+    
+    .contact-list.list-numbers-large > li .list-content{
+        font-size: 24px;
+    }
+    .list-numbers-large:before {
+        right: 35px;
+    }
+    .contact-list.list-numbers-large > li .number-wrap{
+        width: 90px;
+    }
+    .list-numbers-large > li .number,
+    .list-numbers-large.contact-list  > li .number{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+        line-height: 70px;
+        margin-left: 20px;
+    }
+    .list-numbers-large.about-list.inner-section-padding{
+        padding: 8% 0%;
+    }
+    .about-list.list-numbers-large > li .number{
+        width: 55px;
+        height: 55px;
+        margin-right: 20px;
+        line-height: 55px;
+        font-size: 30px;
+    }
+    .about-list.list-numbers-large > li .list-content{
+        padding-left: 0px;
+    }
+    
+    /* Banner Slider
+    ===========================================================================*/
+    .banner-caption .heading{
+        font-size: 20px;
+    }
+    .banner-caption .btn-block-group > .btn{
+        font-size: 12px;
+        padding: 5px 15px;        
+    }    
+    .testslider-box .item-img img{
+        height: auto;
+    }
+    .testslider-box .box-design .heading{
+        padding: 0 40px;
+    }
+    .owl-theme .owl-controls .owl-buttons div{
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    
+    /* Footer
+    ======================================================================================= */
+    .footer-bottom-container{
+        padding: 50px 0px 30px;
+    }
+    .footer-bottom p{
+        /*padding-bottom: 30px;*/
+        
+    }
+    .footer-bottom p:after{
+        margin: 25px auto 0 ;
+        border-bottom: 1px solid #b0d1d2;
+        content: "";
+        display: block;
+        vertical-align: bottom;
+        max-width: 150px;
+    }
+    .footer-bottom ul li{
+        display: block;
+        padding: 10px 0px;
+    }
+    .footer-bottom ul li:after{
+        display: none;
+    }
+}
+
+/* ********************************************************************************************
+    Design for a width of 380px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 380px) {
+
+    .video .icons-content{
+        margin-top: -31px;
+    }
+    .video .icons-content .fa{
+        width:40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 34px;
+        text-indent: 4px;
+        margin-bottom: 10px;
+    }
+    .video .icons-content p{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+  
+}
+
+/* ********************************************************************************************
+    Design for a width of 340px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 320px) {
+   
+    .list-numbers-large:before {
+        right: 28px;
+    }
+    .list-numbers-large > li .number,
+    .list-numbers-large.contact-list  > li .number{
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+        line-height: 55px;
+        margin-left: 20px;
+    }
+    .list-numbers-large > li .list-content{
+        font-size: 24px;
+    }
+    .list-numbers-large.contact-list  > li .list-content{
+        font-size: 18px;
+    }
+    .contact-list.list-numbers-large > li .number-wrap{
+        width: 75px;
+    }
+      
+
+}

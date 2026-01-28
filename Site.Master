@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GWRMedical.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GWR MEDICAL INC. - First in Topical Oxygen Therapy</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="Content/images/favicon.ico">
+    <link href="Content/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="Content/css/bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="Content/css/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="Content/css/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="Content/css/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="Content/css/animation/animate.css" rel="stylesheet">
+    <link href="Content/css/style.css" rel="stylesheet">
+    <link href="Content/css/responsive.css" rel="stylesheet">
+    <link href="Content/fonts/fontawesome/font-awesome.css" rel="stylesheet">
+    <link href="Content/fonts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300&subset=greek,greek-ext,vietnamese,latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css' />
+    <link href="Content/fonts/Proxima/Proxima.css" rel="stylesheet">
+    <!--[if lt IE 9]><script src="js/bootstrap/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="Content/js/bootstrap/ie-emulation-modes-warning.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="Content/js/bootstrap/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form runat="server">
+            <nav class="navbar">
+                <div class="container">	    
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">
+                            <img src="Content/images/logo-fixed.png" alt="Logo" class="show-fixed" />
+                        </a>                    
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                       <ul class="nav navbar-nav navbar-right">
+                              <li runat="server" id="lnkHome"><a href="/">Home</a></li>
+                            <li runat="server" id="lnkProduct"><a href="/products">Products</a></li>
+                            <li runat="server" id="lnkSuccess"><a href="/success-stories">Success Stories</a></li>
+                            <li runat="server" id="lnkAbout"><a href="/about">About Gwr</a></li>
+                            <li runat="server" id="lnkContact"><a href="/contact">Contact Us</a></li>
+                           <li runat="server" id="lnkNews"><a href="/news">News & Events</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="footer">
+                <div class="footer-top-container text-white padding-section bg-pattern" runat="server" id="dvContact">
+                    <div class="container">
+                        <div class="footer-top">
+                            <div class="row">
+                                <div class="v-grid-container">
+                                    <div class="col-md-6 v-grid">
+                                        <div class="section-title">
+                                            <h2 class="heading">Questions about TO2?</h2>
+                                            <span class="text-20px text-white opacity07">Contact us</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 v-grid">
+                                        <div class="btn-block-group text-right">
+                                            <a href="/about" class="btn btn-theme btn-lg btn-block">MORE ABOUT GWR</a>
+                                            <a href="/contact" class="btn btn-border btn-lg btn-block">CONTACT GWR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom-container">
+                    <div class="container">
+                        <div class="footer-bottom">
+                            <p class="copyright">&copy; <asp:Label ID="lblDate" Text="" runat="server" />, GWR Inc.</p>
+                            <ul class="list-inline">
+                                <li runat="server" id="lnkfHome"><a href="/">HOME</a></li>
+                                <li runat="server" id="lnkfProduct"><a href="/products">PRODUCTS</a></li>
+                                <li runat="server" id="lnkfSuccess"><a href="/success-stories">SUCCESS STORIES</a></li>
+                                <li runat="server" id="lnkfAbout"><a href="/about">ABOUT GWR</a></li>
+                                <li runat="server" id="lnkfContact"><a href="/contact">CONTACT US</a></li>
+                                <li runat="server" id="lnkfNews"><a href="/news">News & Events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </form>
+
+        <%: Scripts.Render("~/bundles/mainJS") %>
+    </div>
+</body>
+</html>
