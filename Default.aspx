@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GWRMedical._Default" %>
+<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GWRMedical._Default" %>
 
 <%@ MasterType VirtualPath="~/Site.Master" %>
 
@@ -169,6 +169,11 @@
                                 </span>
                             </span>
                         </a>
+                        <div class="video-language-links" style="text-align: center; margin-top: 10px;">
+                            <a href="#" class="lang-link active" data-video="boot" data-lang="english" onclick="switchLanguage('boot', 'english'); return false;">English</a>
+                            <span style="margin: 0 5px;">|</span>
+                            <a href="#" class="lang-link" data-video="boot" data-lang="spanish" onclick="switchLanguage('boot', 'spanish'); return false;">Spanish</a>
+                        </div>
                     </div>
                     </div>
 
@@ -183,6 +188,11 @@
                                 </span>
                             </span>
                         </a>
+                        <div class="video-language-links" style="text-align: center; margin-top: 10px;">
+                            <a href="#" class="lang-link active" data-video="sacral" data-lang="english" onclick="switchLanguage('sacral', 'english'); return false;">English</a>
+                            <span style="margin: 0 5px;">|</span>
+                            <a href="#" class="lang-link" data-video="sacral" data-lang="spanish" onclick="switchLanguage('sacral', 'spanish'); return false;">Spanish</a>
+                        </div>
                     </div>
                     </div>
 
@@ -358,7 +368,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="stopVideo()"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-body">
                     <video id="videoPlayerBanner" controls loop>
-                        <source src="Content/video/O2Boot 2016 Final with WM.mp4" type="video/mp4">
+                        <source id="videoSourceBanner" src="Content/video/O2 Boot English.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -374,7 +384,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="stopVideo()"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-body">
                     <video id="videoPlayerComputer" controls loop>
-                        <source src="Content/video/O2Sacral 2016 Final with WM.mp4" type="video/mp4">
+                        <source id="videoSourceComputer" src="Content/video/O2 Sacral English 2025.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -391,23 +401,64 @@
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
   
-
+      <style>
+          .video-language-links a {
+              color: #333;
+              text-decoration: underline;
+              font-weight: normal;
+          }
+          .video-language-links a.active {
+              font-weight: bold;
+              color: #007bff;
+              text-decoration: underline;
+          }
+          .video-language-links a:hover {
+              text-decoration: underline;
+          }
+      </style>
       
       <!-- smoothScroll -->
       <script type="text/javascript">
 
           var vidBoot = document.getElementById("videoPlayerBanner");
           var vidSacral = document.getElementById("videoPlayerComputer");
+          var vidSourceBoot = document.getElementById("videoSourceBanner");
+          var vidSourceSacral = document.getElementById("videoSourceComputer");
+
+          var bootVideoLang = 'english';
+          var sacralVideoLang = 'english';
+
+          function switchLanguage(videoType, lang) {
+              if (videoType === 'boot') {
+                  bootVideoLang = lang;
+                  var videoPath = lang === 'english' ? 'Content/video/O2 Boot English.mp4' : 'Content/video/O2 Boot Spanish.mp4';
+                  vidSourceBoot.src = videoPath;
+                  vidBoot.load();
+                  $('.video-language-links a[data-video="boot"]').removeClass('active');
+                  $('.video-language-links a[data-video="boot"][data-lang="' + lang + '"]').addClass('active');
+              } else if (videoType === 'sacral') {
+                  sacralVideoLang = lang;
+                  var videoPath = lang === 'english' ? 'Content/video/O2 Sacral English 2025.mp4' : 'Content/video/O2 Sacral Spanish 2025.mp4';
+                  vidSourceSacral.src = videoPath;
+                  vidSacral.load();
+                  $('.video-language-links a[data-video="sacral"]').removeClass('active');
+                  $('.video-language-links a[data-video="sacral"][data-lang="' + lang + '"]').addClass('active');
+              }
+          }
 
           function playVideoBoot() {
+              var videoPath = bootVideoLang === 'english' ? 'Content/video/O2 Boot English.mp4' : 'Content/video/O2 Boot Spanish.mp4';
+              vidSourceBoot.src = videoPath;
+              vidBoot.load();
               vidBoot.play();
           }
 
           function playVideoSacral() {
+              var videoPath = sacralVideoLang === 'english' ? 'Content/video/O2 Sacral English 2025.mp4' : 'Content/video/O2 Sacral Spanish 2025.mp4';
+              vidSourceSacral.src = videoPath;
+              vidSacral.load();
               vidSacral.play();
           }
-
-
 
           function stopVideo() {
               $("video").each(function () { this.pause(); this.currentTime = 0; });
