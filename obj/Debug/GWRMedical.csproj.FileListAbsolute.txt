@@ -68,3 +68,5 @@ D:\gwrWebsite\GWRMedical\GWRMedical\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\gwrWebsite\GWRMedical\GWRMedical\obj\Debug\GWRMedical.dll
 D:\gwrWebsite\GWRMedical\GWRMedical\obj\Debug\GWRMedical.pdb
 D:\gwrWebsite\GWRMedical\GWRMedical\obj\Debug\GWRMedical.csprojResolveAssemblyReference.cache
+C:\Users\aaldeewan\Documents\GitHub\topicaloxygen\obj\Debug\GWRMedical.dll
+C:\Users\aaldeewan\Documents\GitHub\topicaloxygen\obj\Debug\GWRMedical.pdb
